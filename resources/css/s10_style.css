@@ -1,0 +1,35 @@
+.s10_section2 {
+    margin-top: -20px;
+    }
+
+.s10_txt {
+    margin-left: 200px;
+    text-align: justify;
+    font-weight: 300;
+    margin-top:100px;
+    font-family: 'Overlock', cursive;
+    
+}
+
+.s10_img2{
+    margin-right: 
+}
+
+.s10_zoomimage {
+    overflow: hidden;
+    
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+    transition: 0.75s;
+}
+
+.s10_zoomimage:hover img {
+    transform: scale(1.2);
+}
+hr {
+    color: rgb(244,72,58);
+}
+

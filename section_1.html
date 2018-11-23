@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome</title>
+    <script src="resources/js/jquery.js"></script>
+    <script src="resources/js/bootstrap.js"></script>
+    <script src="resources/js/cordeila.js"></script>
+    <link rel="stylesheet" href="resources/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/component.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Overlock" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Below section defines the NavBar for our Page 
+    by - Arihant Jain-->
+    <section class="section section--menu" id="Cordelia" style="padding-bottom: 1em !important;">
+        <!-- the table is this format as shown:
+        |-------------------------------|----------------------|
+        |                               | navigation and signup|
+        |          logo                 |----------------------|
+        |                               |call and Connectt with|
+        |-------------------------------|----------------------| -->
+        <table style="width: 100%;  background-color: rgba(0, 0, 0, 0.7);">
+            <tr>
+                <td rowspan="2">
+                    <!-- this the logo part -->
+                    <img src="getImage.php?id=1" class="logo-m" id="logo-m">
+                </td>
+                <td>
+                    <!-- our navigation with animation -->
+                    <nav class="menu menu--cordelia">
+                        <ul class="menu__list">
+                            <li class="menu__item menu__item--current">
+                                <a href="#" class="menu__link a-color-white">Home</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link a-color-white">Weddings</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link a-color-white">Venues</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link a-color-white">About</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link a-color-white">Fab</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link a-color-white">Contact</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link a-color-white">Blog</a>
+                            </li>
+                            <!-- saparater -->
+                            <li class="menu__item" style="border-right: solid 1px white; margin-right: 0.6em;">&nbsp;</li>
+                            <!-- login/signup button -->
+                            <li class="menu__item" id="account-button">
+                                <a href="#" style="vertical-align: middle;" class="a-color-white">
+                                    <i class="fa fa-user" style="font-size: 1.2em;"></i>&nbsp;&nbsp;&nbsp;Login/Sign Up</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </td>
+            </tr>
+            <tr>
+                <!-- our contact with us -->
+                <td class="call-td-m" colspan="2">
+                    <span id="phone_no">
+                        <i class="fa fa-phone"></i>&nbsp;&nbsp;+91&nbsp;8975456587</span>
+                    <span class="saparater-m">&nbsp;</span>
+                    <span id="connect-with">Connect with Us</span>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" id="navbar-responsive-m">
+        <a class="navbar-brand" href="#">
+            <img src="getImage.php?id=1" alt="" srcset="" height="100px">
+        </a>
+        <form class="ml-auto form-inline" role="search">
+            <button class="btn btn-default form-control-search-m s1-account">
+                <i class="fa fa-user"></i>&nbsp;&nbsp;Account</button>
+        </form>
+        <!-- </div> -->
+        <button class="navbar-toggler ml-0" data-toggle="collapse" data-target="#nav-tog">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav-tog">
+            <ul class="navbar-nav nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">Wedding</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">Venues</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">Fab</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white" id="contact-2-s1">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">Connect With Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="body-m">
+        <div class="text-center" style="margin-top: 0;">
+            <br>
+            <br>
+            <!-- header of our page... -->
+            <h1 class="heading-m" id="heading-m">Plan Your Wedding With India's Largest Wedding Co.</h1>
+            <br>
+            <br>
+            <br>
+            <!-- the search bar 
+        -by manan trimbakey
+        discription:-->
+            <!-- this search is designed in a table. table background-color is same as the background-color of the button/text-box
+        used to make this, so that it can fill the spaces made by enters and spaces or tab characters.some bootstrap is also applied -->
+            <table class="search-bar" align=center id="search-bar-1" style="width: 80%;">
+                <tr class="">
+                    <td class="border-right search-bar-start box-shadow-left">
+                        <button class="search-button fa fa-map-marker s1-search-part-1"></button>
+                        <!--map-marker button-->
+                        <input type="text" class="search-text-box" placeholder="Search for location" style="width: 70%;"></input>
+                        <!--text-box for input-->
+                        <button class="fa fa-caret-down search-button"></button>
+                        <!--caret down character-->
+                    </td>
+                    <td class="search-bar-end box-shadow-right">
+                        <button class="search-button fa fa-search"></button>
+                        <!--search icon button-->
+                        <input type="text" class="search-text-box" placeholder="Search here also" style="width: 70%;"></input>
+                        <!--text-box for input-->
+                    </td>
+                </tr>
+            </table>&nbsp;
+            <button class="search-button search-button-saparated box-shadow" id="search-m" style="width: 100px;">Search</button>
+            <!--a saparate button to search text button-->
+            <br>
+            <br>
+            <h4 style="color: white; margin: 50px 100px;" id="tagline-m">Fab Weddings Brings To You, Dream Weddings & Pre-Weddings. Fantasize, Plan & Find the Best Vendors With Us.</h4>
+            <!--Tagline-->
+        </div>
+        <!--Some JS for the animation of the navigation bar please do not edit this part from-->
+        <script src="resources/js/classie.js"></script>
+        <script src="resources/js/clipboard.min.js"></script>
+        <script>
+            (function () {
+                [].slice.call(document.querySelectorAll('.menu')).forEach(function (menu) {
+                    var menuItems = menu.querySelectorAll('.menu__link'),
+                        setCurrent = function (ev) {
+                            ev.preventDefault();
+
+                            var item = ev.target.parentNode; // li
+
+                            // return if already current
+                            if (classie.has(item, 'menu__item--current')) {
+                                return false;
+                            }
+                            // remove current
+                            classie.remove(menu.querySelector('.menu__item--current'),
+                                'menu__item--current');
+                            // set current
+                            classie.add(item, 'menu__item--current');
+                        };
+
+                    [].slice.call(menuItems).forEach(function (el) {
+                        el.addEventListener('click', setCurrent);
+                    });
+                });
+            })(window);
+        </script>
+        <!--uptil here-->
+    </div>
+   
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    /*font-family: 'overlock', cursive !important;*/
+}
+
+/* Create two unequal columns that floats next to each other */
+.s10_column {
+    float: left;
+    padding: 10px;
+    height: 180px; /* Should be removed. Only for demonstration */
+}
+
+.s10_left {
+  width: 60%;
+}
+
+.s10_right {
+  width: 40%;
+
+}
+
+/* Clear floats after the columns */
+.s10_row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*quotes class*/
+blockquote {
+border:none;
+margin-bottom:-30px;
+
+}
+
+blockquote h4 {
+    font-size:20px;
+    margin-left: 20px;
+    line-height: 28px;
+}
+
+blockquote h4:before { 
+    content: open-quote;
+    font-weight: bold;
+    font-size:40px;
+    color: rgb(244,72,58);
+
+} 
+blockquote h4:after { 
+	margin-left: 95%;
+    content: close-quote;
+    font-weight: bold;
+    font-size:40px;
+    color: rgb(244,72,58);
+}
+.s10_design{
+	float: left;
+}
+.s10_logo {
+	align-items: center;
+	margin-left: 60px;
+	margin-top: 20PX;
+}
+
+.s10_testimony{
+	margin-left: 200px;
+	margin-right: 200px;
+}

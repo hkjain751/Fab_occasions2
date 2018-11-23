@@ -1,0 +1,56 @@
+.s6_block{
+    height: 350px;
+    width: 800px;
+    background: url(back.webp);
+}
+
+.s6_heading {
+    color: #fff;
+    font-weight: 300;
+    margin-left: 40px;
+    text-align: center;
+
+    
+}
+
+.s6_icon {
+    margin-left: 130px;
+    margin-top: 100px; 
+    
+
+}
+
+.s6_division {
+   
+    width: 300px;
+    margin-left: 25px;
+    display: inline-block;
+}
+
+.s6_para {
+    color: #FBFCFC;
+    margin-left: 20px;
+    text-align: center;
+    font-weight: 200;
+    
+}
+.s6_paragraph{
+    padding-top: 28px;
+}
+/*.s6_image {
+    padding-top: 
+}*/
+.s6_icon2{
+       margin-left: 130px ;
+        margin-top: 100px  
+}
+
+.s6_hr-line{
+    margin-top: -5px;
+    padding: 0;
+    color: rgb(244,72,58);
+    font-weight: 300;
+    margin-left: 40px;
+    text-align: center;
+	font-size: 0.9em;
+}

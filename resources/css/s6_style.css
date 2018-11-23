@@ -1,0 +1,32 @@
+.s6_section2 {
+    margin-top: -20px;
+    }
+
+.s6_xt {
+    margin-left: 200px;
+    text-align: justify;
+    font-weight: 300;
+    margin-top:100px;
+    font-family: 'Overlock', cursive;
+    
+}
+
+/*.s6_img2{
+    margin-right: 
+}*/
+
+.s6_zoomimage {
+    overflow: hidden;
+    
+}
+
+.s6_img {
+    max-height: 100%;
+    max-width: 100%;
+    transition: 0.75s;
+}
+
+.s6_zoomimage:hover img {
+    transform: scale(1.2);
+}
+

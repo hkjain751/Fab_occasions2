@@ -1,0 +1,103 @@
+.kp_header {
+	background: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7));
+	left: 0px;
+	top: 0PX;
+}
+
+.kp_zoomimage {
+    overflow: hidden;
+    align-items: center;
+    
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+    transition: 0.75s;
+    align-items: center;
+}
+
+.kp_zoomimage:hover img {
+    transform: scale(1.3);
+    transition: 1s;
+}
+
+.kp_heading {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+
+    
+}
+
+.kp_icon {
+    margin-top: 11px;
+    margin-left: 41%;
+    align-items: center;
+    width: 18%;
+    margin-right: 41%;
+
+}
+
+.kp_division {
+ 
+    display: inline-block;
+    align-items: center;
+}
+
+.kp_para {
+    color: #FBFCFC;
+    text-align: center;
+    font-weight: 200;
+    font-family: 'overlock', cursive;
+    
+}
+
+.kp_table
+{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.hr-line{
+    margin-top: -5px;
+    margin-bottom: 0px;
+    color: rgb(244,72,58);
+    font-weight: 300;
+    text-align: center;
+}
+.kp_button{
+    color: #fff;
+    background-color: rgb(244,72,58);
+    border-color: transparent;
+    height: 30px;
+    width: 120px;
+    align-self: center;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.kp_button:hover {
+    background-color: #000;
+}
+.button-container {
+    width: 520px;
+    background: #eee;
+    overflow-y: auto;
+    align-content: center;
+}
+
+.button-container > a {
+    width: 250px;
+    height: 100px;
+    float: left;
+    background: lightgray;   
+    margin: 15px;
+}
+.kp_image {
+
+}
+.kp_image1{
+    
+}

@@ -1,0 +1,19 @@
+.gallery-img-div1 {
+    width: 30%;
+    height: 250px;
+    margin-right: 20px;
+}
+
+.gallery-img-div1 img:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.gallery-btn-div {
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    border-radius: 20px 20px;
+    box-shadow: 5px 10px 8px #888888
+}

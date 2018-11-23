@@ -1,0 +1,16 @@
+.btn-red{
+    background-color: rgb(244,72,58);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px 20px;
+}
+
+.btn-red:hover{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+.zoom-icon:hover{
+    transform: scale(1.3);
+    transition: 1s;
+}

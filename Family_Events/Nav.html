@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- <title>Page Title</title> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="resources/css/bootstrap.min.css">
+	<!-- <script src="resources/js/jquery-3.3.1.min.js"></script> -->
+	<!-- <script src="resources/js/bootstrap.min.js"></script> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+	<style>
+		.more-list {
+			display: none;
+			position: absolute;
+			z-index: 1200;
+			background-color: black;
+			box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
+		}
+
+		#more:hover .more-list {
+			display: block;
+		}
+
+		.navbar-Options {
+			border-width: 2px;
+			border-color: transparent;
+			transition: border-bottom-color 0.5s, border-top-color 0.5s;
+			border-style: solid;
+			padding: 10px 10px !important;
+		}
+
+		.navbar-Options:hover {
+			border-bottom-color: rgb(244, 58, 72);
+			border-top-color: rgb(244, 58, 72);
+		}
+
+		.font-Cambria {
+			font-family: Cambria, serif;
+		}
+
+		#account-nav {
+			background: rgb(244, 58, 72);
+			border-radius: 1.4em;
+			transition: background-color 0.25s;
+			border-style: solid;
+			border-width: 1px;
+			border-color: rgb(244, 58, 72);
+		}
+
+		#account-nav:hover {
+			background-color: black;
+		}
+
+		#connect-with-us-nav {
+			transition: background 0.25s;
+			border-radius: 1.4em;
+			background: black;
+			border-color: rgb(244, 58, 72) !important;
+		}
+
+		#connect-with-us-nav:hover {
+			background: rgb(244, 58, 72);
+		}
+
+		#navbar-responsive-m {
+			display: none;
+		}
+
+		@media screen and (max-width: 1000px) {
+			#navbar-responsive-m {
+				display: block;
+			}
+			
+			#new-nav {
+				display: none;
+			}
+		}
+
+		.text-decoration-m-a {
+			text-decoration: none;
+			color: white !important;
+		}
+
+		.text-decoration-m-a:hover {
+			text-decoration: none;
+			color: rgb(244, 58, 72) !important;
+			/* color: rgb(244, 58, 72); */
+		}
+
+		.text-decoration-m {
+			text-decoration: none;
+			color: white !important;
+		}
+
+		.text-decoration-m:hover {
+			text-decoration: none;
+			/* color: rgb(244, 58, 72); */
+		}
+	</style>
+	<script>
+		$(document).ready(function () {
+			var size = $("#connect-with-us-nav").outerWidth();
+			$("#account-nav").outerWidth(size);
+
+			$(window).resize(function () {
+				size = $("#connect-with-us-nav").outerWidth();
+				$("#account-nav").outerWidth(size);
+			});
+		});
+	</script>
+</head>
+
+<body>
+
+	<div class="navBar-new text-white pl-4 pr-4 pt-3 pb-3 fixed-top font-Cambria" id="new-nav" style="width: 100%; background: black; font-size: 1.15em;">
+		<table class="navBar-new-Table w-100">
+			<tr>
+				<td rowspan="2">
+					<img src="resources/img/fab.png" alt="" srcset="" style="height: 100px;">
+				</td>
+				<td style="text-align: right;">
+					<div class="d-inline-block p-2 navbar-Options">
+						<!-- Home -->
+						<a href="../Home.php" class="text-decoration-m">Home</a>
+					</div>
+					<div class="d-inline-block p-2 navbar-Options">
+						<a href="../wedding_section/w_section.php" class="text-decoration-m">Weddings</a>
+					</div>
+					<div class="d-inline-block p-2 navbar-Options">
+						<a href="../pre-weddings/" class="text-decoration-m">Pre-Weddings</a>
+					</div>
+					<div class="d-inline-block p-2 navbar-Options">
+						<a href="#" class="text-decoration-m">Destination Weddings</a>
+					</div>
+					<div class="d-inline-block p-2 navbar-Options">
+						<a href="#" class="text-decoration-m">Vendors</a>
+					</div>
+					<div class="d-inline-block p-2 navbar-Options">
+						<a href="#" class="text-decoration-m">Blog</a>
+					</div>
+					<div class="d-inline-block p-2 navbar-Options">
+						<a href="#" class="text-decoration-m">Contact</a>
+					</div>
+					<span class="border-right">&nbsp;</span>
+					<div class="d-inline-block text-center p-2 navbar-Options border-0" id="more">
+						More
+						<div class="more-list" style="border-radius: 1.2em; left: 85%; top: 3.5em;">
+							<ul class="p-0 text-center" style="list-style-type: none; border-radius: 1.2em;">
+								<li class="p-2"><a class="text-decoration-m-a" href="#">About</a></li>
+								<li class="p-2"><a class="text-decoration-m-a" href="#">Anniversaries</a></li>
+								<li class="p-2"><a class="text-decoration-m-a" href="#">Birthdays</a></li>
+								<li class="p-2"><a class="text-decoration-m-a" href="../Kitty_Party/">Kitty Party</a> </li>
+								<li class="p-2"><a class="text-decoration-m-a" href="../Family_Events/">Family Events</a> </li>
+								<li class="p-2"><a class="text-decoration-m-a" href="#">With Events</a></li>
+								<li class="p-2"><a class="text-decoration-m-a" href="../Corporate-Events/Corporate.php">Coporate Events</a> </li>
+								<li class="p-2"><a class="text-decoration-m-a" href="#">FAQs</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="d-inline-block">
+						<button class="btn text-white" id="account-nav" type="button">
+							<i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;Account</button>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="p-0" style="text-align: right;">
+					<button class="btn bg-transparent text-white" id="contact-nav">
+						<i class="fa fa-phone fa-flip-horizontal"></i> Contact</button>
+					<span class="border-right" style="height: 150%;">&nbsp;</span>
+					<button class="btn text-white border ml-3" id="connect-with-us-nav">Connect With Us</button>
+				</td>
+			</tr>
+
+		</table>
+	</div>
+	<nav class="navbar navbar-dark bg-dark navbar-expand-xl fixed-top" id="navbar-responsive-m">
+		<a class="navbar-brand" href="#">
+			<img src="getImage.php" alt="" srcset="" style="height: 100px;">
+		</a>
+		<form class="ml-auto mr-2 form">
+			<button class="btn btn-danger form-control-search-m s1-account">
+				<i class="fa fa-user"></i>&nbsp;&nbsp;Account</button>
+		</form>
+		<!-- </div> -->
+		<button class="navbar-toggler ml-0 mr-2" data-toggle="collapse" data-target="#nav-tog">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="nav-tog">
+			<ul class="navbar-nav nav">
+				<li class="nav-item">
+					<a href="#" class="nav-link text-white">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link text-white">Wedding</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link text-white">Venues</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link text-white">About</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link text-white">Fab</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link text-white" id="contact-2-s1">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link text-white">Blog</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link text-white">Connect With Us</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</body>
+
+</html>

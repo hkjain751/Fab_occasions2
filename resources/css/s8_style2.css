@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    /*font-family: 'overlock', cursive !important;*/
+}
+
+/* Create two unequal columns that floats next to each other */
+.s8_column {
+    float: left;
+    padding: 10px;
+    height: 180px; /* Should be removed. Only for demonstration */
+}
+
+.s8_left {
+  width: 60%;
+ 
+}
+
+.s8_right {
+  width: 40%;
+
+}
+
+/* Clear floats after the columns */
+.s8_row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*quotes class*/
+blockquote.s8-block {
+border:none;
+margin-bottom:-30px;
+
+}
+
+blockquote.s8-block h4 {
+    font-size:20px;
+    margin-left: 20px;
+    line-height: 28px;
+}
+
+blockquote.s8-block h4:before { 
+    content: open-quote;
+    font-weight: bold;
+    font-size:40px;
+    color: rgb(244,72,58);
+
+} 
+blockquote.s8-block h4:after { 
+	margin-left: 95%;
+    content: close-quote;
+    font-weight: bold;
+    font-size:40px;
+    color: rgb(244,72,58);
+}
+.s8_design{
+	float: left;
+}
+.s8_logo1 {
+	align-items: center;
+	margin-left: 60px;
+	margin-top: 20PX;
+}
+
+.s8_testimony{
+	margin-left: 200px;
+	margin-right: 200px;
+}

@@ -1,0 +1,33 @@
+.cus-btn{
+    padding: 10px 20px;
+    background-color: cornflowerblue;
+    background-color: rgb(244,72,58);
+    color:white;
+}
+.cus-btn:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.cus-sub-btn{
+    border: none;
+    background-color: rgb(244,72,58);
+    color:#fff;
+    padding: 5px 17px;
+    border:1px solid rgb(244,72,58);
+    
+    font-size: 14px;
+    outline: none;
+}
+
+ul.cuz-ul{
+    margin: 0px;
+    padding: 0px;
+}
+li.cuz-li{
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 25px;
+}
+.cuz-h5{
+    margin: 10px 0px;
+}

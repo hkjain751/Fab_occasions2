@@ -1,0 +1,40 @@
+img.s3-damn {
+    opacity: 0.3;
+    transform: scale(1);
+    transition-delay: 0.1s;
+
+}
+
+
+img.s3-damn:hover {
+    opacity: 1;
+    transform: scale(1.4);
+    transition-delay: 0.1s;
+}
+
+.s3-overflow-cus {
+    overflow: hidden;
+}
+
+.s3-rounded-circle {
+    border-radius: 20px !important;
+}
+.s3-custom-btn{
+    color:#515151;
+    background-color: transparent;
+    background-image: none;
+    border-color: #f4483a;
+}
+.s3-custom-btn:visited{
+    border:none;
+}
+
+.s3-custom-btn:hover{
+    color:#fff;
+    background-color: #f4483a;
+    border-color: #f4483a;
+}
+
+.s3-custom-btn:active{
+    border:none;
+}

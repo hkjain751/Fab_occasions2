@@ -1,0 +1,367 @@
+/*Body of this page created by Arihant Jain*/
+
+a.a-color-white {
+    text-decoration: none;
+    color: white;
+    outline: none;
+}
+
+
+/* Below section defines the NavBar for our Page by - Arihant Jain */
+
+.section:nth-of-type(odd):not(:first-child) {
+    color: #fff;
+    background: rgba(255, 0, 0, 0);
+    display: block;
+    position: fixed;
+    top: 0;
+}
+
+
+/*Starting Section For Navigation Bar*/
+
+.section--menu {
+    position: relative;
+    /* overflow: hidden; */
+    min-height: 0px;
+}
+
+.section__title {
+    font-size: 1.5em;
+    font-weight: 50px;
+    -webkit-flex: none;
+    flex: none;
+    text-indent: 3px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.section--intro {
+    font-size: 2em;
+    position: relative;
+    min-height: 0px;
+    text-align: center;
+    color: #fff;
+}
+
+.section--intro p {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#Cordelia {
+    font-family: "Playfair Display";
+    position: fixed;
+    display: block;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+
+/*Starting Section For  Menu List by- Arihant Jain */
+
+.menu {
+    line-height: 1;
+    margin: 1em auto 3em;
+}
+
+.menu__list {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 5px 50px;
+    list-style: none top;
+    float: right;
+}
+
+.menu__item {
+    display: block;
+    margin: 1em 0;
+    float: initial;
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.menu__link {
+    font-size: 1.2em;
+    display: block;
+    padding: 1em 0.5em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: Cambria;
+}
+
+.menu__link:hover,
+.menu__link:hover {
+    outline: none !important;
+}
+
+.menu--cordelia .menu__item {
+    position: relative;
+}
+
+.menu--cordelia .menu__link {
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s !important;
+}
+
+.menu--cordelia .menu__item--current .menu__link {
+    color: #ff3c50;
+    -webkit-transition: color 0.6s;
+    transition: color 0.6s !important;
+}
+
+.menu--cordelia .menu__item::before,
+.menu--cordelia .menu__item::after {
+    content: '';
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 2px;
+    background: white;
+    -webkit-transform: scale3d(0, 1, 1);
+    transform: scale3d(0, 1, 1);
+    -webkit-animation-fill-mode: initial;
+    animation-fill-mode: initial;
+}
+
+.menu--cordelia .menu__item::before {
+    top: 0;
+    right: 0;
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+
+.menu--cordelia .menu__item::after:hover {
+    bottom: 2px;
+    left: 0;
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+
+.menu--cordelia .menu__item--current::before {
+    -webkit-animation: anim-cordelia-top 0.6s linear both;
+    animation: anim-cordelia-top 0.6s linear both;
+}
+
+.menu--cordelia .menu__item--current::after {
+    -webkit-animation: anim-cordelia-bottom 0.6s linear both;
+    animation: anim-cordelia-bottom 0.6s linear both;
+}
+
+
+/* Uptil here menu list for our page */
+
+
+/* Below section is starting of amination for Top & bottom line of menu list for our page */
+
+@-webkit-keyframes anim-cordelia-top {
+    0% {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+    10% {
+        -webkit-transform: scale3d(0.05, 1, 1);
+        transform: scale3d(0.05, 1, 1);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    50% {
+        -webkit-transform: translate3d(-95%, 0, 0) scale3d(0.05, 1, 1);
+        transform: translate3d(-95%, 0, 0) scale3d(0.05, 1, 1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+        transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    }
+}
+
+@keyframes anim-cordelia-top {
+    0% {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+    10% {
+        -webkit-transform: scale3d(0.05, 1, 1);
+        transform: scale3d(0.05, 1, 1);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    50% {
+        -webkit-transform: translate3d(-95%, 0, 0) scale3d(0.05, 1, 1);
+        transform: translate3d(-95%, 0, 0) scale3d(0.05, 1, 1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+        transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    }
+}
+
+@-webkit-keyframes anim-cordelia-bottom {
+    0% {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+    10% {
+        -webkit-transform: scale3d(0.05, 1, 1);
+        transform: scale3d(0.05, 1, 1);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    50% {
+        -webkit-transform: translate3d(95%, 0, 0) scale3d(0.05, 1, 1);
+        transform: translate3d(95%, 0, 0) scale3d(0.05, 1, 1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+        transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    }
+}
+
+@keyframes anim-cordelia-bottom {
+    0% {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+    10% {
+        -webkit-transform: scale3d(0.05, 1, 1);
+        transform: scale3d(0.05, 1, 1);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    50% {
+        -webkit-transform: translate3d(95%, 0, 0) scale3d(0.05, 1, 1);
+        transform: translate3d(95%, 0, 0) scale3d(0.05, 1, 1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+        transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    }
+}
+
+
+/* Uptil here amination for Top & bottom line of menu list for our page */
+
+
+/*Starting section for connect with us by- Manan Trimbakey*/
+
+#connect-with {
+    margin-right: 50px;
+    border: solid rgb(244, 72, 58) 1px;
+    padding: 10px 65px 10px 65px;
+    border-radius: 25px;
+    font-size: 1em;
+    transition: background-color 0.25s;
+    font-family: Cambria;
+}
+
+#connect-with:hover {
+    background-color: rgb(244, 72, 58);
+    cursor: pointer;
+}
+
+
+/* Uptil here connect with us for our page */
+
+
+/*Starting section for Login/SignUp by- Manan Trimbakey*/
+
+#account-button {
+    border: solid;
+    background-color: rgb(244, 72, 58);
+    border-color: rgb(244, 72, 58);
+    border-radius: 25px;
+    border-width: 1px;
+    transition: background-color 0.25s;
+    padding: 18px 60px 0 60px;
+    font-size: 1em;
+    font-family: "Playfair Display";
+    margin: 0.9em 0;
+    font-family: Cambria;
+}
+
+#account-button:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+/* Uptil here Login/SignUp for our page */
+
+
+/* Uptil here Navigation bar for our page */
+
+
+/* Below section defines the search bar and filter bar for our Page by - Manan Trimbakey */
+
+a.a-color-white:hover {
+    text-decoration: none !important;
+    color: white;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.logo-m {
+    height: 100px;
+    margin: 10px;
+    margin-bottom: 4px;
+    margin-left: 50px;
+}
+
+.call-td-m {
+    text-align: right;
+    font-size: 1em;
+    color: #ffffff;
+    height: 3em;
+    padding-bottom: 10px;
+}
+
+.saparater-m {
+    border-left: 1px solid rgb(255, 255, 255);
+    height: 5px;
+    margin: 0 8px 0 5px;
+}
+
+
+/*#search-m:hover {
+    cursor: pointer;
+}*/
+
+#navbar-responsive-m {
+    display: none;
+}
+
+
+/* Uptil here search bar & filter bar for our page.*/
+
+
+/* media query to change navbar when it breaks */
+
+@media screen and (max-width: 1250px) {
+    #Cordelia {
+        display: none;
+    }
+    #navbar-responsive-m {
+        display: flex;
+    }
+}
